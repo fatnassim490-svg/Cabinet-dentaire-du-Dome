@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cabinet dentaire du Dôme — Chirurgien-dentiste à Marseille 13004</title>
+<meta name="description" content="Cabinet dentaire du Dôme à Marseille : soins préventifs, urgences dentaires, esthétique et parodontologie. Une équipe attentionnée, spécialisée dans la gestion de la phobie du dentiste.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<!-- Header / Navbar -->
+<header class="site-header" id="header">
+  <div class="header-inner">
+    <a href="#accueil" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 3C11 3 7 6.6 7 12.2c0 3.4 1.1 5.9 2 8.9.8 2.7 1.5 6.6 3.4 8.7.9 1 1.9 1.2 2.4-.2.6-1.8.4-5.4 2.2-5.4s1.6 3.6 2.2 5.4c.5 1.4 1.5 1.2 2.4.2 1.9-2.1 2.6-6 3.4-8.7.9-3 2-5.5 2-8.9C27 6.6 23 3 17 3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="logo-text">Cabinet dentaire<br><strong>du Dôme</strong></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#avis">Avis</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <p class="status-badge" id="status-badge">
+        <span class="status-dot" id="status-dot" aria-hidden="true"></span>
+        <span id="status-text">Vérification des horaires…</span>
+      </p>
+      <a href="#rdv" class="btn btn-primary nav-cta">Prendre Rendez-vous</a>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <button type="button" class="mobile-menu-close" id="mobile-menu-close" aria-label="Fermer le menu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#avis">Avis</a>
+    <a href="#contact">Contact</a>
+    <p class="status-badge status-badge-mobile" id="status-badge-mobile">
+      <span class="status-dot" id="status-dot-mobile" aria-hidden="true"></span>
+      <span id="status-text-mobile">Vérification des horaires…</span>
+    </p>
+    <a href="#rdv" class="btn btn-primary">Prendre Rendez-vous</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero Section -->
+  <section class="hero" id="accueil">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="badge-rating">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          4,7/5 <span class="badge-rating-muted">(93 avis Google)</span>
+        </p>
+        <h1>Vos soins dentaires en toute sérénité à Marseille</h1>
+        <p class="hero-subtitle">Une équipe attentionnée, réactive et spécialisée dans la prise en charge personnalisée au 10 Rond-point Claudie d'Arcy.</p>
+        <div class="hero-actions">
+          <a href="#rdv" class="btn btn-primary btn-lg">Prendre Rendez-vous</a>
+          <a href="#services" class="btn btn-ghost btn-lg">Découvrir nos soins</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="hero.jpg" alt="Accueil et salle d'attente du Cabinet dentaire du Dôme à Marseille" class="w-full h-full object-cover rounded-2xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="apropos">
+    <div class="section-inner">
+      <h2>Présentation du cabinet</h2>
+      <p class="section-lead about-lead">Bienvenue au Cabinet Dentaire du Dôme, situé au 10 rond-point Claudie d'Arcy (Marseille 4e), en plein cœur d'un Pôle de Santé. Notre équipe de 5 chirurgiens-dentistes omnipraticiens accueille adultes et enfants dans un cadre moderne et bienveillant.</p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="3" stroke="#0F766E" stroke-width="1.6"/><circle cx="17" cy="9" r="2.4" stroke="#0F766E" stroke-width="1.6"/><path d="M2.5 19c.8-3.4 3-5.3 5.5-5.3s4.7 1.9 5.5 5.3M14 19c.6-2.6 2.1-4 4-4s3.2 1.4 3.8 4" stroke="#0F766E" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>5 dentistes omnipraticiens</h3>
+          <p>Une équipe complète pour répondre à tous vos besoins bucco-dentaires, du soin courant au traitement plus spécialisé.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9C.5 8 2 4 6 4c2.2 0 3.6 1.2 4 2 1.4-1.8 3.9-2.5 6.2-1.5 3.5 1.5 4.2 5.9 1.8 9.5C15.6 16.5 12 21 12 21z" stroke="#0F766E" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Soins adultes &amp; enfants</h3>
+          <p>Un accueil pensé pour toute la famille, avec une approche adaptée à chaque âge et à chaque niveau d'appréhension.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 21V9l8-6 8 6v12" stroke="#0F766E" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 21v-7h6v7" stroke="#0F766E" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Au cœur du Pôle de Santé</h3>
+          <p>Un emplacement central à Marseille 4e, facilement accessible, au sein d'un pôle regroupant plusieurs professionnels de santé.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Highlights -->
+  <section class="highlights">
+    <div class="highlights-inner">
+      <div class="highlight-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9C.5 8 2 4 6 4c2.2 0 3.6 1.2 4 2 1.4-1.8 3.9-2.5 6.2-1.5 3.5 1.5 4.2 5.9 1.8 9.5C15.6 16.5 12 21 12 21z" stroke="#0F766E" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <span>Accompagnement doux &amp; gestion de la phobie</span>
+      </div>
+      <div class="highlight-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="7" r="3.2" stroke="#0F766E" stroke-width="1.6"/><path d="M2.5 20c1-3.6 3.6-5.6 6.5-5.6s5.5 2 6.5 5.6M16 8.5c1.7.3 3 1.8 3 3.6 0 1-.4 1.9-1 2.5m2.5 5.4c-.7-2.5-2.3-4-4.2-4.6" stroke="#0F766E" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span>Équipe bienveillante &amp; à l'écoute</span>
+      </div>
+      <div class="highlight-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2v20M4 8l8-6 8 6M4 8v9a2 2 0 0 0 2 2h3m9-11v9a2 2 0 0 1-2 2h-3" stroke="#0F766E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-5a3 3 0 0 1 6 0v5" stroke="#0F766E" stroke-width="1.6"/></svg>
+        <span>Prise en charge rapide &amp; urgences</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <h2>Services</h2>
+      <p class="section-lead">Des soins adaptés à chaque étape, dans un cadre pensé pour votre confort.</p>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" style="background:#E6F5F3;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Consultation &amp; soins préventifs</h3>
+          <p>Bilans bucco-dentaires complets, détartrages et dépistage précoce pour préserver durablement la santé de votre sourire.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" style="background:#FEF3E8;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M9 4h6v5h5v6h-5v5H9v-5H4V9h5V4z" stroke="#EA580C" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Urgences dentaires</h3>
+          <p>Douleur, traumatisme, abcès : une prise en charge rapide en cabinet, avec des créneaux réservés chaque jour aux urgences.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" style="background:#E7F4FC;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z" fill="#0EA5E9"/><path d="M18.5 3.5l.6 1.7 1.7.6-1.7.6-.6 1.7-.6-1.7-1.7-.6 1.7-.6.6-1.7z" fill="#0EA5E9"/></svg>
+          </div>
+          <h3>Esthétique dentaire</h3>
+          <p>Blanchiment, facettes et alignement discret pour retrouver un sourire naturel qui vous ressemble.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" style="background:#EFF6ED;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 5-3 8.5-7 9-4-.5-7-4-7-9V6l7-3z" stroke="#16A34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Parodontologie &amp; suivi spécialisé</h3>
+          <p>Traitement des gencives et suivi personnalisé sur le long terme pour stabiliser durablement votre santé parodontale.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" style="background:#F3EEFB;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 7C5 4 8 3 12 4C16 3 19 4 19 7C19 9 17.5 9.5 17 11C16.5 13 16.5 16 15.5 19C15 20.5 13.5 20.5 13 18C12.7 16.5 12.5 15 12 15C11.5 15 11.3 16.5 11 18C10.5 20.5 9 20.5 8.5 19C7.5 16 7.5 13 7 11C6.5 9.5 5 9 5 7Z" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10h12" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 9h1.8v2H9zM13.2 9h1.8v2h-1.8z" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Orthodontie (adulte &amp; enfant)</h3>
+          <p>Correction de l'alignement dentaire à tout âge, avec des solutions discrètes adaptées aux enfants comme aux adultes.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" style="background:#FDF2F8;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M7 4C7 2.5 9 2 12 2C15 2 17 2.5 17 4C17 6 16 6.5 15.5 8C15.2 8.8 14.5 9 12 9C9.5 9 8.8 8.8 8.5 8C8 6.5 7 6 7 4Z" stroke="#DB2777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.5 9v11.5L12 23l2.5-2.5V9" stroke="#DB2777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12h8M8 15h8M8 18h8" stroke="#DB2777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Implantologie</h3>
+          <p>Remplacement de dents manquantes par des implants durables, pour retrouver confort de mastication et sourire complet.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="avis">
+    <div class="section-inner">
+      <div class="testimonials-header">
+        <div>
+          <h2>Avis patients</h2>
+          <p class="section-lead">Découvrez ce que nos patients pensent de notre cabinet et de la qualité de nos soins.</p>
+        </div>
+        <div class="google-badge">
+          <span class="google-badge-stars" aria-hidden="true">★★★★★</span>
+          <span><strong>4,7/5</strong> · 93 avis Google</span>
+        </div>
+      </div>
+
+      <div class="testimonials-carousel">
+        <button type="button" class="carousel-arrow carousel-arrow-left" id="reviews-prev" aria-label="Avis précédents">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <div class="testimonials-grid" id="reviews-track">
+        <article class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <p>« Excellent cabinet dentaire, vraiment très professionnelle et bienveillante. Le Dr Alice Viry m'a énormément aidé et a su détecter et traiter des problèmes que personne n'avait repérés auparavant. L'accueil par les secrétaires est également impeccable : souriantes et très efficaces. Je recommande à 100 % ! »</p>
+          <p class="review-author">— Soibahati Youssoufa</p>
+          <p class="review-verified">
+            <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.9 18.9 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.5 0 10.4-1.9 14.3-5.1l-6.6-5.4C29.6 35.4 27 36 24 36c-5.3 0-9.6-3.3-11.3-7.9l-6.6 5.1C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.2 5.5l6.6 5.4C41.5 36 44 30.5 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
+            Avis vérifié Google
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <p>« Un grand merci pour leur réactivité et leur professionnalisme. J'ai été reçu un dimanche, ce qui est très rare, et toute l'équipe a su m'écouter, me rassurer et me réorienter avec beaucoup de bienveillance. Une prise en charge humaine et efficace. »</p>
+          <p class="review-author">— Florent Arnaud</p>
+          <p class="review-verified">
+            <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.9 18.9 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.5 0 10.4-1.9 14.3-5.1l-6.6-5.4C29.6 35.4 27 36 24 36c-5.3 0-9.6-3.3-11.3-7.9l-6.6 5.1C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.2 5.5l6.6 5.4C41.5 36 44 30.5 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
+            Avis vérifié Google
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <p>« Superbe centre. Propre, bien organisé. Le médecin était à mon écoute et a parfaitement pris en compte ma phobie du dentiste. Enfin un centre dentaire compétent et rassurant ! »</p>
+          <p class="review-author">— Olivia Salemme</p>
+          <p class="review-verified">
+            <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.9 18.9 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.5 0 10.4-1.9 14.3-5.1l-6.6-5.4C29.6 35.4 27 36 24 36c-5.3 0-9.6-3.3-11.3-7.9l-6.6 5.1C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.2 5.5l6.6 5.4C41.5 36 44 30.5 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
+            Avis vérifié Google
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <p>« Cabinet dentaire exceptionnel ! Toute l'équipe est très professionnelle, bienveillante et à l'écoute. On se sent tout de suite en confiance, avec une prise en charge rapide et de grande qualité du début à la fin. »</p>
+          <p class="review-author">— Rihab Kefi</p>
+          <p class="review-verified">
+            <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.9 18.9 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.5 0 10.4-1.9 14.3-5.1l-6.6-5.4C29.6 35.4 27 36 24 36c-5.3 0-9.6-3.3-11.3-7.9l-6.6 5.1C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.2 5.5l6.6 5.4C41.5 36 44 30.5 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
+            Avis vérifié Google
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <p>« Au top !! La dentiste a été très douce et professionnelle, résultat impeccable ! Un centre dentaire joli et très propre. Prise de RDV rapide via Doctolib, je recommande vivement. »</p>
+          <p class="review-author">— Emilie Hello</p>
+          <p class="review-verified">
+            <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.9 18.9 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.5 0 10.4-1.9 14.3-5.1l-6.6-5.4C29.6 35.4 27 36 24 36c-5.3 0-9.6-3.3-11.3-7.9l-6.6 5.1C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.2 5.5l6.6 5.4C41.5 36 44 30.5 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
+            Avis vérifié Google
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <p>« Un cabinet dentaire exceptionnel ! L'accueil est toujours chaleureux, l'équipe souriante et les soins sont réalisés avec beaucoup de douceur et d'attention. On se sent écouté et rassuré. »</p>
+          <p class="review-author">— Sonia Takesrit</p>
+          <p class="review-verified">
+            <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.9 18.9 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.5 0 10.4-1.9 14.3-5.1l-6.6-5.4C29.6 35.4 27 36 24 36c-5.3 0-9.6-3.3-11.3-7.9l-6.6 5.1C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.2 5.5l6.6 5.4C41.5 36 44 30.5 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
+            Avis vérifié Google
+          </p>
+        </article>
+        </div>
+
+        <button type="button" class="carousel-arrow carousel-arrow-right" id="reviews-next" aria-label="Avis suivants">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Appointment Booking Section -->
+  <section class="contact" id="contact">
+    <div class="section-inner" id="rdv">
+      <h2>Contact &amp; prise de rendez-vous</h2>
+      <p class="section-lead">Retrouvez nos coordonnées ou remplissez le formulaire pour demander un créneau : notre secrétariat vous recontacte pour confirmer.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info-col">
+          <div class="contact-info">
+            <div class="info-row">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-7.5 7-13a7 7 0 1 0-14 0c0 5.5 7 13 7 13z" stroke="#0F766E" stroke-width="1.7"/><circle cx="12" cy="9" r="2.5" stroke="#0F766E" stroke-width="1.7"/></svg>
+              <div>
+                <p class="info-label">Adresse</p>
+                <p>10 Rdpt Claudie d'Arcy, 13004 Marseille</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 2c1 2.5 3.5 5 6 6l2-2 5 2v2c0 1-1 2-2 2C10 20 4 14 4 5z" stroke="#0F766E" stroke-width="1.7" stroke-linejoin="round"/></svg>
+              <div>
+                <p class="info-label">Téléphone</p>
+                <p><a href="tel:0486682668">04 86 68 26 68</a></p>
+              </div>
+            </div>
+            <div class="info-row">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#0F766E" stroke-width="1.7"/><path d="M12 7v5l3.5 2" stroke="#0F766E" stroke-width="1.7" stroke-linecap="round"/></svg>
+              <div>
+                <p class="info-label">Horaires</p>
+                <p>Lundi – Vendredi&nbsp;: 09h00 – 18h00<br>Samedi &amp; Dimanche&nbsp;: Fermé</p>
+              </div>
+            </div>
+            <div class="info-row info-row-social">
+              <div class="info-row-social-content">
+                <p class="info-label">Réseaux sociaux</p>
+                <a href="https://www.instagram.com/cabinetdentairedudome/" target="_blank" rel="noopener noreferrer" aria-label="Suivre le Cabinet dentaire du Dôme sur Instagram" class="instagram-cta">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#FFFFFF" stroke-width="1.7"/><circle cx="12" cy="12" r="4" stroke="#FFFFFF" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.1" fill="#FFFFFF"/></svg>
+                  <span>Suivez-nous sur Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-map">
+            <iframe
+              title="Localisation du Cabinet dentaire du Dôme à Marseille"
+              src="https://www.google.com/maps?q=10+Rond-point+Claudie+d'Arcy,+13004+Marseille&output=embed"
+              width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+        <form class="rdv-form" id="rdv-form" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="rdv-nom">Nom</label>
+              <input type="text" id="rdv-nom" name="nom" autocomplete="family-name" required>
+            </div>
+            <div class="form-field">
+              <label for="rdv-prenom">Prénom</label>
+              <input type="text" id="rdv-prenom" name="prenom" autocomplete="given-name" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="rdv-tel">Numéro de téléphone</label>
+              <input type="tel" id="rdv-tel" name="telephone" autocomplete="tel" required>
+            </div>
+            <div class="form-field">
+              <label for="rdv-email">Email <span class="label-optional">(Optionnel)</span></label>
+              <input type="email" id="rdv-email" name="email" autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="rdv-motif">Motif de la consultation</label>
+            <select id="rdv-motif" name="motif" required>
+              <option value="" disabled selected>Sélectionnez un motif</option>
+              <option value="consultation-detartrage">Consultation générale / Détartrage</option>
+              <option value="urgence">Urgence dentaire</option>
+              <option value="orthodontie">Orthodontie</option>
+              <option value="implantologie-esthetique">Implantologie / Esthétique</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="rdv-date">Date souhaitée <span class="label-optional">(Optionnel)</span></label>
+              <input type="date" id="rdv-date" name="date">
+            </div>
+            <div class="form-field">
+              <label for="rdv-creneau">Créneau souhaité <span class="label-optional">(Optionnel)</span></label>
+              <select id="rdv-creneau" name="creneau">
+                <option value="" disabled selected>Sélectionnez un créneau</option>
+                <option value="matin">Matin (09h00 – 12h30)</option>
+                <option value="apres-midi">Après-midi (14h00 – 18h00)</option>
+                <option value="indifferent">Peu importe</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="rdv-message">Précisez votre demande <span class="label-optional">(Optionnel)</span></label>
+            <textarea id="rdv-message" name="message" rows="4" placeholder="Décrivez votre besoin ou toute information utile à l'équipe soignante..."></textarea>
+          </div>
+
+          <div class="rdv-actions">
+            <button type="submit" class="btn btn-primary btn-lg rdv-submit">Envoyer ma demande de RDV</button>
+            <a href="tel:0486682668" class="btn btn-outline btn-lg rdv-call">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1.1.5 1.1 1.1v3.6c0 .6-.5 1.1-1.1 1.1C10.5 21.4 2.6 13.5 2.6 3.7c0-.6.5-1.1 1.1-1.1H7.3c.6 0 1.1.5 1.1 1.1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.2 1.1L6.6 10.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              <span>Nous appeler</span>
+            </a>
+          </div>
+
+          <p class="form-feedback" id="rdv-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-text">Cabinet dentaire<br><strong>du Dôme</strong></span>
+      <p>10 Rond-point Claudie d'Arcy<br>13004 Marseille</p>
+      <p><a href="tel:0486682668">04 86 68 26 68</a></p>
+      <p>Lundi – Vendredi&nbsp;: 09h00 – 18h00<br>Samedi &amp; Dimanche&nbsp;: Fermé</p>
+      <a class="footer-instagram" href="https://www.instagram.com/cabinetdentairedudome/" target="_blank" rel="noopener noreferrer" aria-label="Voir le profil Instagram du Cabinet dentaire du Dôme">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+      </a>
+    </div>
+
+    <div class="footer-links">
+      <p class="footer-heading">Navigation</p>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact &amp; RDV</a>
+    </div>
+
+    <div class="footer-legal">
+      <p class="footer-heading">Informations</p>
+      <a href="#">Mentions légales</a>
+      <a href="#">Politique de confidentialité</a>
+      <a href="#">Accessibilité</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Cabinet dentaire du Dôme — Marseille. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
